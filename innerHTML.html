@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Guess the Number</title>
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <div class="container">
+       <h1>Guess the number</h1>
+       <p>Pick a number between 1 to 100</p>
+       <input type="number" id="inp" placeholder="Enter your guess">
+       <button id="submit">Guess!</button>
+       <p id="msg"></p>
+       <p>Attempts: <span id="Attempt">0</span></p>
+       <button id="resBtn" style="display: none;">Restart Again</button>
+       <h3>Your Attempts:</h3>
+       <ul id="attemptsList"></ul> <!-- Container for attempted numbers -->
+   </div>
+   <audio id="wrongSound" src="wrong-answer.mp3"></audio> <!-- Audio element -->
+   <audio id="winSound" src="goodresult-82807.mp3" preload="auto"></audio>
+   <script src="./logic.js"></script>
+</body>
+</html>
